@@ -1,0 +1,35 @@
+<h1>
+  Test Evaluación
+</h1>
+
+<section style="height: 280px;" class="container">
+  <form id="test-form" [formGroup]="testForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="row">
+        <label class="col-xl-4 col-lg-4 col-md-12 col-sm-12">Nombre:
+          <input class="form-control" formControlName="name">
+        </label>
+        <label class="col-xl-4 col-lg-4 col-md-12 col-sm-12">Edad:
+          <input class="form-control" formControlName="age">
+        </label>
+        <label class="col-xl-4 col-lg-4 col-md-12 col-sm-12">Comentarios:
+          <input class="form-control" formControlName="comments">
+        </label>
+    </div>
+    <button type="submit" [disabled]="!testForm.valid" class="btn btn-success">GUARDAR</button>
+  </form>
+  <label style="padding: 10px;" class="col-xl-12 col-lg-12 col-md-12 col-sm-12">Componente recibe datos: {{message}} </label>
+</section>
+<section style="padding: 10px;" class="container">
+    <div class="row">
+        <app-component1 class="col-xl-6" (ObjectEvent)=receiveObject($event)></app-component1>
+    </div>
+    
+</section>
+
+<footer>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" >
+      <div style="height: 400px;" ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img src="{{ slide.img }}" alt="" width="100%">
+      </div>
+    </ngx-slick-carousel>
+</footer>

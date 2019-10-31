@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "Rob McAffe",
+        "age": 20,
+        "comments": "Admin"
+    },
+    {
+        "id": "2",
+        "name": "Francis Coleman",
+        "age": 25,
+        "comments": "User"
+    },
+    {
+        "id": "3",
+        "name": "Justin Blackmon",
+        "age": 34,
+        "comments": "Boss"
+    },
+    {
+        "id": "4",
+        "name": "Skoozi Sync",
+        "age": 19,
+        "comments": "Buyer"
+    }
+]
